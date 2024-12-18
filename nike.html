@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website Design</title>
+
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    
+    <link rel="stylesheet" href="nike.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="logo.png" alt="" />
+      </a>
+
+      <ul class="nav">
+        <li><a href="#">New & Featured</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Sales</a></li>
+      </ul>
+
+      <div class="nav-btns">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#" class="menu-btn" onclick="toggleMenu()"
+          ><i class="fas fa-bars"></i
+        ></a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-img zoom-out">
+        <img src="img1.png" alt="" />
+      </div>
+      <div class="options options2">
+        <div class="box" onclick="changeImg('images/img1.png')">
+          <img src="img1.png" alt="" />
+        </div>
+        <div class="box" onclick="changeImg('images/img2.png')">
+          <img src="img2.png" alt="" />
+        </div>
+        <div class="box" onclick="changeImg('images/img3.png')">
+          <img src="img3.png" alt="" />
+        </div>
+      </div>
+      <div class="hero-txt zoom-left">
+        <h1 class="zoom-left">Nike Air <br />Max</h1>
+        <p class="zoom-right">
+          Lace up and feel the legacy in a champion running shoe that helped
+          define the '90s. Worn by presidents, revolutionised through collabs
+          and celebrated through rare colourways.
+          Design By Malik Anas
+        </p>
+
+        <h5 class="price zoom-left">$300.00</h5>
+        <div class="hero-btn">
+          <a href="#" class="btn">Add to bag</a>
+          <a href="#" class="btn-txt">View Details</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="options">
+      <div class="box zoom-left" onclick="changeImg('img1.png')">
+        <img src="img1.png" alt="" />
+      </div>
+      <div class="box zoom-right" onclick="changeImg('img2.png')">
+        <img src="img2.png" alt="" />
+      </div>
+      <div class="box zoom-left" onclick="changeImg('img3.png')">
+        <img src="img3.png" alt="" />
+      </div>
+    </div>
+
+    <a href="#" class="scroll slide-up">
+      <i class="fas fa-arrow-down"></i>
+    </a>
+    <div class="anas">
+      <h1>@All Rights are reserves by Malik Anas/nike</h1>
+    </div>
+
+    <script src="nike.js"></script>
+  </body>
+</html>
